@@ -21,7 +21,10 @@ body {
     font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
 }
-
+div {
+    margin: auto;
+    text-align: center;
+}
 main {
     display: flex;
     flex-direction: column;
