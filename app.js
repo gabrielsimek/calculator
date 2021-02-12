@@ -18,9 +18,9 @@ generateNumber.addEventListener('click', () => {
     randomTwo.textContent = Math.floor(Math.random() * 100);
 }); */
 
+import { add, subtract, multiply, divide } from './utilities.js';
 
-
-
+console.log(subtract(5, 4));
 // Addition
 const inputOneA = document.getElementById('input-one-a');
 
@@ -31,7 +31,7 @@ const addButtonA = document.getElementById('compute-button-a')
 let outputA = document.getElementById('output-a');
 
 addButtonA.addEventListener('click', () => {
-    outputA.textContent = Number(inputOneA.value) + Number(inputTwoA.value);    
+    outputA.textContent = add(Number(inputOneA.value), Number(inputTwoA.value));    
 });
 
 
@@ -40,12 +40,12 @@ const inputOneS = document.getElementById('input-one-s');
 
 const inputTwoS = document.getElementById('input-two-s');
 
-const addButtonS = document.getElementById('compute-button-s')
+const addButtonS = document.getElementById('compute-button-s');
 
 let outputS = document.getElementById('output-s');
 
 addButtonS.addEventListener('click', () => {
-    outputS.textContent = Number(inputOneS.value) - Number(inputTwoS.value);    
+    outputS.textContent = subtract(Number(inputOneS.value), Number(inputTwoS.value));  
 });
 
 
@@ -59,7 +59,7 @@ const addButtonM = document.getElementById('compute-button-m');
 let outputM = document.getElementById('output-m');
 
 addButtonM.addEventListener('click', () => {
-    outputM.textContent = Number(inputOneM.value) * Number(inputTwoM.value);    
+    outputM.textContent = multiply(Number(inputOneM.value), Number(inputTwoM.value));    
 });
 
 
@@ -73,7 +73,7 @@ const addButtonD = document.getElementById('compute-button-d')
 let outputD = document.getElementById('output-d');
 
 addButtonD.addEventListener('click', () => {
-    outputD.textContent = Number(inputOneD.value) / Number(inputTwoD.value);    
+    outputD.textContent = divide(Number(inputOneD.value), Number(inputTwoD.value));    
 });
 
 
